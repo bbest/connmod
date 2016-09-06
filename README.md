@@ -2,6 +2,8 @@
 
 Connectivity Modeling
 
+- originally transferred from subversion revision 123 (bbest, 2011-02-28) at <https://code.env.duke.edu/svn/connmod/trunk/> (note other branches there; login required at <https://code.env.duke.edu/projects/connmod/browser>)
+
 ## Abstract
 
 Quantifying connectivity between patches of habitat is important to the prediction of population viability, genetic fitness and spread of contagion (Urban and Keitt 2001).  Graph theory provides a robust set of algorithms with which to analyze connectivity over a network.  The majority of conservation-based networks to date have been based on simplistic networks to describe habitat patches as nodes and corridors as connected straight edges. 
