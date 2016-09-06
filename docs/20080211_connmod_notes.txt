@@ -1,0 +1,26 @@
+questions:
+ - FIX: what are the boundary edges doing on interior for CONN_02062008\fr_OUT_55km\7700ha?
+ - FIX: why are paths repeated fromnode <-> tonode?
+   - create csv first, then check for # records in dbf
+ - FIX!: absolute paths in network.txt description, change to relative paths like *.mxd
+ - FIX: centroids missing in resulting network after least-cost paths if no neighbors
+ - FIX: 55,000 m -> 55000 m: comma bad for now
+ 
+history: 
+ * cleaned up wd.replace stuff, and check of paths in create_network.py
+   * TODO: others
+ * variable costthreshold allowed
+ 
+networks by membership
+ - inclusion by attribute field
+ - faster rendering of lc paths edges:
+   "tr_lc" =1 AND "EdgeType" IN ( 'boundary', 'external')
+
+paths by relationship
+ - 1 edge to many paths
+ - relate paths.dbf to edges
+"FromNode" IN (11778,87832) AND
+"ToNode" IN (11778,87832)
+
+"FromNode" IN (11778,5535) AND
+"ToNode" IN (11778,5535)

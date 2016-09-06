@@ -1,0 +1,45 @@
+Selected 2 edges: 6798,8612
+
+4/8/2010
+Next up: 
+
+
+3/27/2010
+So have tool for "Display Paths by End Nodes".
+Next need tool to highlight paths by Edges.  Select Paths and Centroid Nodes involved.
+
+"Display Paths by End Nodes"
+  Where is the path between these patches?
+
+"Display Paths by Edges"
+  To what paths and patches is this edge connect
+  * check that path to edges is correct based on network.txt
+
+Getting wierd zig-zags
+ -> parameterize default cost over different edges in create_network.py
+    eweights = {'internal':0.8, 'perimeter':0.9, 'external':1, 'boundary':1}  # tweaking this has major implications, particularly for internal edges
+Add 
+
+Then tweak complexity.
+
+Could build into GDB with nodes, edges and paths using relationship classes.
+
+ * Damn!  I was using feat.length as weight, but this is only in 2D!?!
+   So now calculating LengthXYZ
+   -> so go with euclidean distance * weight-by-type (internal/perimeter/external/boundary) + costdist
+
+ * Damn!  Extra zigs and zags not part of paths, b/c lc network based on subgraph of nbunch, not add_edge.
+   -> so fixed by doing true subgraph based on edges, not nodes
+   -> perhaps downweight interior edges by 0.5?
+
+3/19/2010
+trying to use interactive Feature Set selection.
+
+  * NodeID 2643, 2423
+
+  * "FromNode" IN (2699, 2643) AND "ToNode" IN (2699, 2643)
+
+  * strange zig-zags, so need to penalize internal, perimeter with Euclidean cost
+    ensure matrix costs are at least Euclidean (additive?)
+
+ * tweak TIN creation
