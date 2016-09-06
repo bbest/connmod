@@ -1,0 +1,11 @@
+d:
+cd D:\code\connmod\trunk
+
+create_network.py "D:\code\connmod\branches\tncpa\input\lowa_cost" "D:\code\connmod\branches\tncpa\input\lowa_hab_patch.shp" "D:\code\connmod\branches\tncpa\network\full\costdist" "D:\code\connmod\branches\tncpa\network\full\tin" "D:\code\connmod\branches\tncpa\network\full\nodes.shp" "D:\code\connmod\branches\tncpa\network\full\edges.shp" "D:\code\connmod\branches\tncpa\network\full\network.txt"
+
+simplify_internal_edges.py "D:\code\connmod\branches\tncpa\network\full\network.txt" "SI" "d:\code\connmod\branches\tncpa\network\trunc\network_si.txt"
+
+truncate_network.py "D:\code\connmod\branches\tncpa\network\full\network.txt" "1000" "sitr1000" "d:\code\connmod\branches\tncpa\network\trunc\network_sitr1000.txt"
+
+network_leastcostpaths.py "d:\code\connmod\branches\tncpa\network\trunc\network_sitr1000.txt" "1000" "sitr1000lc" "d:\code\connmod\branches\tncpa\network\lc\network_sitr1000lc.txt" "d:\code\connmod\branches\tncpa\network\lc\network_sitr1000lc.dbf"
+  

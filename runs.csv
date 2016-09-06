@@ -1,0 +1,25 @@
+dir_out,dir_in,cost,patches.shp,dispersal,notes,create_network,truncate_network,network_leastcostpaths,network_centrality
+fr_OUT_55km\7700ha,fr_IN,frcost011408,fsr_gt7700ha.shp,55000 m,"Modeled Habitat: Mar 19th 200-ha moving window analysis; >90% forested habitat & region-grouped; selected patches greater than 7,700 ha (8 polygons).
+Resistance scores: expert recommended, Larkin translated scores (121207);
+Tier 2 habitat (patches smaller than threshold down to 660 ha) NOT burned into cost surface",0,0,0,0
+fr_OUT_55km\660ha,fr_IN,frcost011408,fsr_gt660ha.shp,55000 m,"Modeled Habitat: Mar 19th 200-ha moving window analysis; >90% forested habitat & region-grouped; selected patches greater than 660 ha (48 Polygons).
+Resistance scores: expert recommended, Larkin translated scores (121207)",0,0,0,1
+tr_OUT_62km\med_high,tr_IN,trcost011408,trs_medhigh.shp,6200 m,"medium and high quality potential habitat polygons only (from T. Davis)
+(verified and non-verified) (141 polygons). 
+Resistance scores: expert recommended, Larkin translated scores (121207); 
+Tier 2 (low quality) habitat NOT burned into cost surface",0,0,0,1
+lw_OUT_75km\rcsd_high,lw_IN,lwcost011408,lw041207pa_high.shp,7500 m,"Modeled Habitat: April 12th, 2007 version; reclassified habitat suitability scores by manual breaks based on mean & standard deviation; selected only highest quality class (590 polygons, WITHIN PA ONLY)
+Resistance scores: expert recommended, Larkin translated scores (121207); 
+Tier 2 habitat (modeled patches not used as input to conn model) NOT burned into cost surface",0,0,0,1
+tr_OUT_62km\all_poly,tr_IN,trcost011408,trs_all_polys.shp,6200 m,"entire dataset -- all polygons (low, med, high) delineated by T. Davis
+(verified and non-verified) (190 polygons).  
+Resistance scores: expert recommended, Larkin translated scores (121207)",0,0,0,1
+lw_OUT_75km\all_poly,lw_IN,lwcost011408,lw041207pa.shp,7500 m,"Modeled Habitat: April 12th, 2007 version; all polygons WITHIN PA ONLY (6,352 polygons)
+Resistance scores: expert recommended, Larkin translated scores (121207); 
+Tier 2 habitat (modeled patches not used as input to conn model) NOT burned into cost surface",0,0,0,1
+fr_OUT_55km\3200ha,fr_IN,frcost011408,fsr_gt3200ha.shp,55000 m,"Modeled Habitat: Mar 19th 200-ha moving window analysis; >90% forested habitat & region-grouped; selected patches greater than 3200 ha (16 Polygons).
+Resistance scores: expert recommended, Larkin translated scores (121207);
+Tier 2 habitat (patches smaller than threshold down to 660 ha) BURNED into cost surface",0,0,0,1
+fr_OUT_55km\1500ha,fr_IN,frcost011408,fsr_gt1500ha.shp,55000 m,"Modeled Habitat: Mar 19th 200-ha moving window analysis; >90% forested habitat & region-grouped; selected patches greater than 1,500 ha (28 Polygons).
+Resistance scores: expert recommended, Larkin translated scores (121207); 
+Tier 2 habitat (patches smaller than threshold down to 660 ha) NOT burned into cost surface",0,0,0,1

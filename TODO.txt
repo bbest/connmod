@@ -1,0 +1,39 @@
+ * links to external programs:
+   * Pajek
+   * igraph (R, Python...)
+     http://www.cs.rhul.ac.uk/home/tamas/development/igraph/tutorial/tutorial.html
+     http://igraph.wikidot.com/r-recipes
+     * community / clique detection in R (Palla, 2005 - Nature) 
+       http://igraph.wikidot.com/community-detection-in-r
+   * compare with CircuitScape and FunnConn
+
+ * Reviewers: Theobald, Keitt, Ricketts
+ 
+ * trade-off b/n complexity of graph vs 
+ * boundary issues w/ least-cost
+ * expand tools/help
+   * routes by membership
+   * paths by relationship
+ * text files deletion problem
+
+ * other software
+   * funconn
+   * circuitscape
+   * open-source?
+   ...
+
+
+print...
+
+docs
+  deanu/tncpa_final.pdf
+
+software
+  
+
+refs
+  code\bbest\thesis\other\docs_IndyStudyS06\arcrstats_refs
+  code\bbest\thesis\refs
+
+ppt
+  code\bbest\thesis\ppt\200704_BestMSthesisDefense.ppt
